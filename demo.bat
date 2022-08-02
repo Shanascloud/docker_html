@@ -1,6 +1,8 @@
-docker stop vinod_demo1
-docker rm -f vinod_demo1
-docker image rm -f vinod_demo1
-docker build -t vinod_demo1 .
-docker run -dit --name vinod_demo1 -p 909:80 vinod_demo1
+docker stop html_vinod;
+docker rm -f html_vinod;
+docker image rm -f html_vinod;
+docker build -t html_vinod .;
+docker run -dit --name html_vinod -p 909:80 html_vinod;
+docker tag html_vinod vinosmpal/html_vinod;
+docker push vinosmpal/html_vinod
 
